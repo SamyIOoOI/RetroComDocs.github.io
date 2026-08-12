@@ -14,17 +14,26 @@
         <img src="Graphics/New RetroCom Banner.png" style="max-width: 50%; max-height: auto;">>
         </div>
 
-        <ul class="panel" style="padding-top: 5px;"><li><a href="#about">- About -</a></li><li><a href="#usage">- Controls -</a></li><li><a href="#wiring">- Assembly -</a></li><li><a href="#github">- Repository -</a></li></ul>
 
+
+        <ul class="panel" style="padding-top: 5px; padding-bottom: 5px;"><li><a href="#about">- About -</a></li><li><a href="#usage">- Controls -</a></li><li><a href="#wiring">- Assembly -</a></li><li><a href="#github">- Repository -</a></li></ul>
+                <ul class="panel" style="padding-top: 10px;"><li><img src="Graphics/Small Fusion Banner.png"></li><li><img src="Graphics/Small 8052 Banner.png"></li><li><img src="Graphics/Small KiCad Banner.png"></li></ul>
+
+</div>
+ <p style="display:flexbox; justify-content: center;" align="center">For a couple months now, I've been amazed by the architecture of old microprocessors <br> such as the 8051, Z80 and the better 8051 variant, the 8052. <br> At around the same time, I set up a LAN-based Chat app for me & my parents to use. <br> However, It stopped working a little while after, and me being the I guess I'll do it on my own guy, <br>I decided to create a workaround. Which is why I made two things. <span style="color: orangered; font-style: italic; text-decoration: underline; font-size: larger;" title="Retro as in the MCU I use and Com as in Intercom, get it?">RetroCom</span> & LanO'Lan.</p>
+
+<div class="glowing">
         <h2 align="left", id="about" style="padding-top: 20px; padding-left: 20px;">What is RetroCom?</h2>
 </div>
-        <p style="padding-left: 45px;">For a couple months now, I've been amazed by the architecture of old microprocessors <br> such as the 8051, Z80 and the better 8051 variant, the 8052. <br> At around the same time, I set up a LAN-based Chat app for me & my parents to use. <br> However, It stopped working a little while after, and me being the I guess I'll do it on my own guy, <br>I decided to create a workaround. Which is why I made two things. <span style="color: orangered; font-style: italic; text-decoration: underline;">RetroCom</span> & LanO'Lan.</p>
+<p style="padding-left: 45px; text-indent: 1em">A multiple channel one-to-one (Simultaneous Speech) two-way <span style="color: orangered; font-style: italic; text-decoration: underline; font-size: larger;" title="An intercom is a private, standalone voice communication system used inside a building, vehicle, or aircraft. It allows people in different rooms or areas to talk to each other using a microphone and a speaker.">INTERCOM</span> built around the AT89C52-PI24 MCU // AT89S52-PU24 (8052 Core) with an Embedded FM Radio Module. It can support (in wired mode) up to 4 stations with a single Ethernet CAT6 Cable running from the side station to the main station. [Planned] Wireless variants can utilize HF radio signals for longer cable-free connections with stable support of up to 30-20 stations at once. </p>
 <div class="glowing">
         <h2 align="left", id="usage" style="padding-top: 20px; padding-left: 20px;">How to use RetroCom?</h2>
         </div>
+        <p style="padding-left: 45px; text-indent: 1em">Each station is controlled via <span style="color: orangered">3-5 Buttons</span>, <span style="color: orangered">2 Audio knobs</span>, and <span style="color: orangered">2 Toggle Switches</span>. Where the main station has <span style="color: orangered">5 buttons</span>: <span style="color: orangered">SCROLL</span>, <span style="color: orangered">CALL</span>, <span style="color: orangered">HANG</span>, <span style="color: orangered">RADIO_1</span>, <span style="color: orangered">RADIO_2</span>. Meanwhile Stations 2, 3 and 4 Lack Radio_1 and Radio_2; as the radio module is only available in the main station. The 2x16 LCD Display Shows the current selected station. It also changes if you're on call, calling, or recieving a call. The display also shows the current radio station & selected scroll mode [Only in Main Station]. In order to initiate a call you press the scroll button until the display shows the desired station. Afterwards you hit call. In case the target is busy or has declined your call you will recieve a CALL/BUSY display on your 2x16 Display. When you recieve a call the buzzer will begin its sequence & the display will show who the caller is. ACCEPT/DENY the call via the HANG & CALL buttons.</p>
 <div class="glowing">
         <h2 align="left", id="wiring" style="padding-top: 20px; padding-left: 20px;">How to assemble RetroCom?</h2>
         </div>
+        <p style="padding-left: 45px; text-indent: 1em">In case you order a printed PCB, good news, the only assembly you will need will invole a bunch of M3 Screws and a screwdriver. Use them to stabilize the Board inside the 3D Case (or whatever makeshift variant of the case you got).</p>
 <div class="glowing">
         <h2 align="left", id="github" style="padding-top: 20px; padding-left: 20px;">Where can I access the source files?</h2>
 
