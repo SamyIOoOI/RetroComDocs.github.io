@@ -25,4 +25,4 @@ The website covers common questions such as what RetroCom is, how to use it, how
 Made by SamyIOoOI on github under the GPL-3.0 Licence.
 
 -----------------
-Ignore how I named the repository... Didn't know that .github.io in the end wasn't required to host on github
+Ignore how I named the repository... Didn't know that .github.io in the end wasn't required to host the website Github.
