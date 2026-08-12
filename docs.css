@@ -91,14 +91,6 @@ a{
 .answer4{
     display: none;
 }
-.arrow1right{}
-.arrow2right{}
-.arrow3right{}
-.arrow4right{}
-.arrow1down{}
-.arrow2down{}
-.arrow3down{}
-.arrow4down{}
 summary::-webkit-details-marker{
     display: none;
 }
