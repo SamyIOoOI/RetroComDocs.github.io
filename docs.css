@@ -1,0 +1,66 @@
+.vt323-regular {
+  font-family: "VT323", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: black;
+    font-family: 'VT323', monospace;
+}
+p, h1, h2, h3{
+    color: #00FF00;
+    font-weight: bold;
+}
+h1{
+    font-size: xx-large;
+}
+h2, h3{
+    font-size: larger;
+}
+.glowing {
+    text-shadow: 0 0 3vw;
+}
+.glow1{
+    animation: glow 2s ease infinite;
+    -moz-animation: glow 2s ease infinite;
+    -webkit-animation: glow 2s ease infinite;
+}
+a{
+    color: #00FF00;
+    text-decoration: none;
+    font-style: italic;
+    font-size: larger;
+}
+.panel{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 25px;
+
+}
+.center{
+    display: flex;
+    justify-content: center;
+}
+@keyframes glow{
+    0%,
+    100%{
+        text-shadow: 0 0 1vw #00FF00,
+        0 0 3vw #00FF00,
+        0 0 10vw #00FF00,
+        0 0 10vw #00FF00,
+        0 0 0.4vw #E0FFE0,
+        .5vw .5vw .1vw #008000;
+        color: #E0FFE0;
+    }
+    50%{
+        text-shadow: 0 0 .5vw #004D00, 0 0 1.5vw #004D00, 0 0 5vw #004D00, 0 0 5vw #004D00, 0 0 .2vw #004D00, .5vw .5vw .1vw #002100;
+    color: #008000;
+    }
+
+}
