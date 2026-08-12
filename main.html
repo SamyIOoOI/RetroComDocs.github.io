@@ -39,6 +39,15 @@
         <h2 align="left", id="github" style="padding-top: 20px; padding-left: 20px;">Where can I access the source files?</h2>
     </div>
     <p style="padding-left: 45px; text-indent: 1em">RetroCom Github Repository! In the repository you'll find all the source fusion and kicad files, in addition to the gerber & BOM files. Head to <a href="https://github.com/SamyIOoOI/RetroCom" style="color: orangered;">RetroCom on Github</a> to grab any of the files or check out more details of the project. <span style="color:orangered;">If you find any problems with RetroCom feel free to open an issue or contact me on Discord. Username: samy0__0</span></p>
-    <script></script>
+    <script>
+        let cursor = document.querySelector('#dot');
+        let body = document.querySelector('body');
+        document.addEventListener('mousemove', (e) => {
+            body.style.backgroundPositionX = e.pageX/-4 + 'px';
+            body.style.backgroundPositionY = e.pageY/-4 + 'px';
+            cursor.style.top = e.pageY + 'px';
+            cursor.style.left = e.pageX + 'px';
+        })
+    </script>
 </body>
 </html>
