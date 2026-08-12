@@ -29,29 +29,14 @@ h2, h3{
 }
 #dot{
     position: fixed;
-    width: 25px;
-    height: 25px;
-    border-top: 5px solid #00FF00;
-    border-left: 5px solid #00FF00;
-    transform-origin: top;
-    transform: translate(-1px,5px)rotate(15deg) scale(0);
-    transition: transform 0.1s;
-    pointer-events: none;
-    animation: animate 5s linear infinite;
-}
-#dot::before 
-{
-    content: '';
-    position:absolute;
-    left: -2.5px;
-    width: 5px;
-    height: 40px;
+    width: 12px;
+    height: 12px;
     background:#00FF00;
-    transform-origin: top;
-    transform: rotate(315deg);
-}
-body:hover #dot{
-    transform: translate(-1px,5px)rotate(15deg) scale(1);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 10px #00FF00, 0 0 20px #00FF00, 0 0 30px #00FF00;
+    pointer-events: none;
+    z-index: 9999;
 }
 .glow1{
     animation: glow 2s ease infinite;
